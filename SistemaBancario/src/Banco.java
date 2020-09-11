@@ -14,10 +14,6 @@ public class Banco {
         this.gerentes = new Lista();
     }
 
-    public void cadastrarCorrentista() {
-
-    }
-
     public Conta criarConta(Agencia agencia, Correntista correntista) {
         long numero = getQuantContas() + 1;
         int digitoVerificador = obterDigitoVerificador(numero);
@@ -52,7 +48,6 @@ public class Banco {
         Agencia novaAgencia = new Agencia();
         this.agencias.adicionarItem(novaAgencia);
         return novaAgencia;
-
     }
 
     public int getQuantAgencias() {

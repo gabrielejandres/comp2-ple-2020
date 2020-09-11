@@ -1,7 +1,6 @@
 public class Correntista {
 
     private String nome;
-
     private int senhaNumerica;
 
     public Correntista(String nome, int senhaNumerica) {
@@ -11,5 +10,9 @@ public class Correntista {
 
     public String getNome() {
         return nome;
+    }
+
+    public boolean verificaSenha(int senha) {
+        return this.senhaNumerica == senha;
     }
 }

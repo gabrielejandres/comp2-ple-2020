@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827f2e36-0d84-4d7a-9966-a1b3abe2c6b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Fracao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Fracao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Siguinha/Siguinha.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Siguinha/Siguinha.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SistemaBancario/SistemaBancario.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SistemaBancario/SistemaBancario.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SistemaBancario/src/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SistemaBancario/src/Banco.java" afterDir="false" />
@@ -45,7 +44,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -54,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="675" />
     <option name="y" value="-8" />
     <option name="width" value="699" />
@@ -85,6 +84,9 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,7 +135,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />

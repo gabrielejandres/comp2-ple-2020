@@ -34,6 +34,7 @@ public class Conta {
         this.gerente = agencia.getGerenteGeral();  // o gerente default fica sendo o gerente-geral da agência
     }
 
+    // Getters e setters
     public long getNumero() {
         return numero;
     }
@@ -66,12 +67,14 @@ public class Conta {
         this.agencia = agencia;
     }
 
+    // Métodos
     public void receberDepositoEmDinheiro(float valor) {
         depositar(valor, "em dinheiro");
     }
 
     public void sacar(float valor, int senha) {
-        if (this.saldo - valor < -LIMITE) {  // saldo insuficiente
+        boolean senhasCorrespondem = this.getCorrentista().verificaSenha(senha);
+        if (this.saldo - valor < -LIMITE || !senhasCorrespondem) {  // saldo insuficiente
             return;  // ToDo lançar exceção
         }
         this.saldo -= valor;
@@ -80,6 +83,9 @@ public class Conta {
     }
 
     public void efetuarTransferencia(Conta contaDestino, float valor) {
+        if (this.saldo - valor < -LIMITE) {  // saldo insuficiente
+            return;  // ToDo lançar exceção
+        }
         this.saldo -= valor;
         contaDestino.depositar(valor, this.getCorrentista().getNome());
         String novoItem = String.format(
@@ -89,6 +95,9 @@ public class Conta {
     }
 
     public void depositar(float valor, String descricaoOrigem) {
+        if(valor < 0) {
+              return; // ToDo lançar exceção
+        }
         this.saldo += valor;
         String novoItem = String.format("Depósito %s: R$%.2f", descricaoOrigem, valor);
         this.historicoOperacoes[this.quantItensHistorico++] = novoItem;
