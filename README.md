@@ -1,1 +1,1 @@
-# Comp2_2020_PLE
+# Repositório de atividades - Laboratório - Computação II
