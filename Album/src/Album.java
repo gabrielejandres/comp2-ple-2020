@@ -129,19 +129,35 @@ public class Album {
         return pacotinhosNecessarios;
     }
 
+    /**
+     * Getter
+     * @return a quantidade de figurinhas coladas que esse álbum possui
+     */
     public int getQuantFigurinhasColadas() {
         int quantFigurinhasColadas = (this.pacotinhosRecebidos * this.quantFigurinhasPorPacotinho) - this.getQuantFigurinhasRepetidas();
         return quantFigurinhasColadas > this.totalFigurinhas ? this.totalFigurinhas : quantFigurinhasColadas;
     }
 
+    /**
+     * Getter
+     * @return a quantidade de figurinhas que faltam para completar o álbum
+     */
     public int getQuantFigurinhasFaltando() {
         return this.totalFigurinhas - this.getQuantFigurinhasColadas();
     }
 
+    /**
+     * Getter
+     * @return quantos pacotinhos de figurinhas já foram recebidos por esse álbum
+     */
     public int getTotalPacotinhosRecebidos() {
         return this.pacotinhosRecebidos;
     }
 
+    /**
+     * Getter
+     * @return quantas figurinhas repetidas esse álbum possui
+     */
     public int getQuantFigurinhasRepetidas() {
         return this.quantFigurinhasRepetidas;
     }
