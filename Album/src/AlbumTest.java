@@ -47,7 +47,6 @@ public class AlbumTest {
         assertTrue(album.possuiFigurinhaRepetida(primeiroPacotinho[0]));  // outra forma
         assertTrue(album.possuiFigurinhaRepetida(new Figurinha(1, "dskdfsk")));  // outra forma
 
-
         posicoes = new int[] {10, 23, 1};
         Figurinha[] segundoPacotinho = criarPacotinho(posicoes);
         album.receberNovoPacotinho(segundoPacotinho);
