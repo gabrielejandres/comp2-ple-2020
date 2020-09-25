@@ -29,15 +29,19 @@ public class LojaVirtualTest {
     public void testarInclusaoProdutoNoEstoque() {
         loja.incluirProdutoNoEstoque(livro1, 1);
         assertEquals("O estoque da loja deve ser 1 após a inclusão de 1 produto", 1, loja.getTamanhoEstoque());
-        assertEquals("O estoque da produto deve ser 1 após a inclusão de 1 produto",1, loja.getTamanhoEstoque(livro1));
+        assertEquals("O estoque do produto deve ser 1 após a inclusão de 1 produto",1, loja.getTamanhoEstoque(livro1));
 
         loja.incluirProdutoNoEstoque(roupa1, 1);
         assertEquals("O estoque da loja deve ser 2 após a inclusão de mais 1 produto",2, loja.getTamanhoEstoque());
-        assertEquals("O estoque da produto deve ser 1 após a inclusão de 1 produto",1, loja.getTamanhoEstoque(roupa1));
+        assertEquals("O estoque do produto deve ser 1 após a inclusão de 1 produto",1, loja.getTamanhoEstoque(roupa1));
 
         loja.incluirProdutoNoEstoque(roupa1, 5);
         assertEquals("O estoque da loja deve ser 7 após a inclusão de mais 5 produtos",7, loja.getTamanhoEstoque());
-        assertEquals("O estoque da produto deve ser 6 após a inclusão de mais 5 produtos",6, loja.getTamanhoEstoque(roupa1));
+        assertEquals("O estoque do produto deve ser 6 após a inclusão de mais 5 produtos",6, loja.getTamanhoEstoque(roupa1));
+
+        loja.incluirProdutoNoEstoque(livro2, 3);
+        assertEquals("O estoque da loja deve ser 10 após a inclusão de mais 3 produtos",10, loja.getTamanhoEstoque());
+        assertEquals("O estoque do produto deve ser 3 após a inclusão de 3 produtos",3, loja.getTamanhoEstoque(livro2));
     }
 
     /**
@@ -74,6 +78,7 @@ public class LojaVirtualTest {
                 "\nTotal = R$170.0";
 
         assertEquals("A venda deve ser efetuada, se houver quantidade, e o recibo deve ser retornado",reciboEsperado, loja.efetuarVenda(roupa2, 2));
+        assertEquals(170, loja.getTotalValorVendas(), 0);
     }
 
     /**
@@ -94,6 +99,26 @@ public class LojaVirtualTest {
                 "\nTotal = R$40.0";
 
         assertEquals("A venda deve ser efetuada, se houver quantidade, e o recibo deve ser retornado",reciboEsperado, loja.efetuarVenda(livro2, 1));
+        assertEquals(40, loja.getTotalValorVendas(), 0);
+    }
+
+    /**
+     * Testa a venda de vários produtos
+     */
+    @Test
+    public void testarVendaDeVariosProdutos() {
+        loja.incluirProdutoNoEstoque(livro1, 2);
+        loja.incluirProdutoNoEstoque(livro2, 1);
+        loja.incluirProdutoNoEstoque(roupa1, 15);
+
+        loja.efetuarVenda(livro2, 1);
+        assertEquals(40, loja.getTotalValorVendas(), 0);
+
+        loja.efetuarVenda(livro1, 2);
+        assertEquals(120, loja.getTotalValorVendas(), 0);
+
+        loja.efetuarVenda(roupa1, 2);
+        assertEquals(290, loja.getTotalValorVendas(), 0);
     }
 
 }

@@ -6,7 +6,7 @@ public class LojaVirtual {
     private String nome;
 
     // valor total das vendas desta loja
-    private static double totalValorVendas;
+    private double totalValorVendas;
 
     // a quantidade total de itens no estoque
     private int tamanhoEstoque = 0;
@@ -59,17 +59,11 @@ public class LojaVirtual {
 
                     recibo += produto.toString();
                     recibo += "\nInformações da venda: " + "\nTotal = R$" + totalVenda;
-
-                    adicionarValorVendaAoTotal(totalVenda);
                 }
             }
         }
 
         return recibo;
-    }
-
-    private static void adicionarValorVendaAoTotal(float totalVenda) {
-        totalValorVendas += totalVenda;
     }
 
     /**
@@ -92,8 +86,8 @@ public class LojaVirtual {
      * Getter
      * @return o valor total das vendas desta loja
      */
-    public static double getTotalValorVendas() {
-        return totalValorVendas;
+    public double getTotalValorVendas() {
+        return this.totalValorVendas;
     }
 
     /**
