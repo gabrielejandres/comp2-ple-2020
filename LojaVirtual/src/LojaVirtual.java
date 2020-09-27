@@ -61,6 +61,8 @@ public class LojaVirtual {
                     recibo += "\nInformações da venda: " + "\nTotal = R$" + totalVenda;
                 }
             }
+        } else {
+            // ToDo lançar exceção
         }
 
         return recibo;
