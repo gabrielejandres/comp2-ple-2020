@@ -81,7 +81,12 @@ public class LojaVirtual {
      * @return a quantidade total de um determinado produto no estoque
      */
     public int getTamanhoEstoque(Produto produto) {
-        return produto.getQuantidadeEmEstoque();
+        if(this.produtos.contains(produto)) {
+            return produto.getQuantidadeEmEstoque();
+        }
+        else {
+            return 0; // ToDo lançar exceção
+        }
     }
 
     /**
