@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e05de4d-5a1a-4306-965e-74082c7ebc60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LojaVirtual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LojaVirtual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LojaVirtualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LojaVirtualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Roupa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Roupa.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LojaVirtual.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="81" column="47" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
+            <state relative-caret-position="544">
+              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
               <folding>
                 <element signature="e#2289#2290#0" expanded="true" />
                 <element signature="e#2344#2345#0" expanded="true" />
@@ -45,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LojaVirtualTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1352">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,6 +92,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.get</find>
+      <find>produto.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,11 +102,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LAB4.txt" />
-        <option value="$PROJECT_DIR$/src/LojaVirtualTest.java" />
         <option value="$PROJECT_DIR$/src/Produto.java" />
         <option value="$PROJECT_DIR$/src/Livro.java" />
         <option value="$PROJECT_DIR$/src/Roupa.java" />
         <option value="$PROJECT_DIR$/src/LojaVirtual.java" />
+        <option value="$PROJECT_DIR$/src/LojaVirtualTest.java" />
       </list>
     </option>
   </component>
@@ -121,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="675" />
     <option name="y" value="-8" />
     <option name="width" value="699" />
@@ -260,9 +256,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LojaVirtualTest - 2020.09.25 at 17h 08m 11s.xml">
-      <configuration name="LojaVirtualTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LojaVirtualTest - 2020.09.25 at 17h 08m 58s.xml">
       <configuration name="LojaVirtualTest" configurationId="JUnit" />
     </history-entry>
@@ -288,6 +281,9 @@
       <configuration name="LojaVirtualTest.testarVendaDeRoupaComSucesso" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LojaVirtualTest - 2020.09.26 at 23h 55m 33s.xml">
+      <configuration name="LojaVirtualTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LojaVirtualTest - 2020.09.27 at 00h 03m 28s.xml">
       <configuration name="LojaVirtualTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -362,25 +358,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LojaVirtualTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1352">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LojaVirtual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="81" column="47" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
+        <state relative-caret-position="544">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
           <folding>
             <element signature="e#2289#2290#0" expanded="true" />
             <element signature="e#2344#2345#0" expanded="true" />
             <element signature="e#2660#2661#0" expanded="true" />
             <element signature="e#2691#2692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LojaVirtualTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
