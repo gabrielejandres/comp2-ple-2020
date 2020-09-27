@@ -2,11 +2,11 @@ public class Produto {
 
     private static long controleId = 1;
 
-    protected final long id;
-    protected int pesoEmGramas;
-    protected float precoEmReais;
-    protected String categoria;
-    protected int quantidadeEmEstoque;
+    private final long id;
+    private int pesoEmGramas;
+    private float precoEmReais;
+    private String categoria;
+    private int quantidadeEmEstoque;
 
     /**
      * Construtor
@@ -15,6 +15,15 @@ public class Produto {
     public Produto(float precoEmReais) {
         this.id = controleId++;
         this.precoEmReais = precoEmReais;
+    }
+
+    /**
+     * Overload do construtor
+     * @param precoEmReais o preço em reais do produto
+     */
+    public Produto(float precoEmReais, String categoria) {
+        this(precoEmReais);
+        this.categoria = categoria;
     }
 
     /**

@@ -79,7 +79,7 @@ public class LojaVirtual {
      * @return a quantidade total de um determinado produto no estoque
      */
     public int getTamanhoEstoque(Produto produto) {
-        return produto.quantidadeEmEstoque;
+        return produto.getQuantidadeEmEstoque();
     }
 
     /**
@@ -88,6 +88,14 @@ public class LojaVirtual {
      */
     public double getTotalValorVendas() {
         return this.totalValorVendas;
+    }
+
+    /**
+     * Getter
+     * @return arraylist de todos os produtos no estoque desta loja
+     */
+    public ArrayList<Produto> getProdutos() {
+        return produtos;
     }
 
     /**

@@ -11,12 +11,21 @@ public class Roupa extends Produto {
      * @param tamanho o tamanho desta roupa
      */
     public Roupa(float precoEmReais, String nomeDaPeca, char tamanho) {
-        super(precoEmReais);
+        super(precoEmReais, "Vestuário");
         this.nomeDaPeca = nomeDaPeca;
         this.tamanho = tamanho;
+    }
 
-        // a categoria de qualquer roupa deve ser automaticamente "Vestuário"
-        super.setCategoria("Vestuário");
+    /**
+     * Exibir informações essenciais da roupa
+     * @return uma string com as informações essenciais da roupa
+     */
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nInformações particulares desta Roupa: " +
+                "\nNome da peça = " + this.nomeDaPeca +
+                "\nTamanho = " + this.tamanho;
     }
 
     // Getters e setters
@@ -30,17 +39,5 @@ public class Roupa extends Produto {
 
     public void setCor(String cor) {
         this.cor = cor;
-    }
-
-    /**
-     * Exibir informações essenciais da roupa
-     * @return uma string com as informações essenciais da roupa
-     */
-    @Override
-    public String toString() {
-        return super.toString() +
-                "\nInformações particulares desta Roupa: " +
-                "\nNome da peça = " + this.nomeDaPeca +
-                "\nTamanho = " + this.tamanho;
     }
 }

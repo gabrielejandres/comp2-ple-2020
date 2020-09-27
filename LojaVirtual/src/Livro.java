@@ -14,14 +14,25 @@ public class Livro extends Produto {
      * @param numeroDePaginas o número de paginas deste livro
      */
     public Livro(float precoEmReais, String titulo, String autor, int anoDePublicacao, int numeroDePaginas) {
-        super(precoEmReais);
+        super(precoEmReais, "Publicações");
         this.titulo = titulo;
         this.autor = autor;
         this.anoDePublicacao = anoDePublicacao;
         this.numeroDePaginas = numeroDePaginas;
+    }
 
-        // a categoria de qualquer livro1 deve ser automaticamente "Publicações"
-        super.setCategoria("Publicações");
+    /**
+     * Exibir informações essenciais do livro
+     * @return uma string com as informações essenciais do livro
+     */
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nInformações particulares deste Livro: " +
+                "\nTítulo = " + titulo +
+                "\nAutor = " + autor +
+                "\nAno de Publicação = " + anoDePublicacao +
+                "\nNúmero de páginas = " + numeroDePaginas;
     }
 
     // Getters
@@ -39,19 +50,5 @@ public class Livro extends Produto {
 
     public int getNumeroDePaginas() {
         return numeroDePaginas;
-    }
-
-    /**
-     * Exibir informações essenciais do livro
-     * @return uma string com as informações essenciais do livro
-     */
-    @Override
-    public String toString() {
-        return super.toString() +
-                "\nInformações particulares deste Livro: " +
-                "\nTítulo = " + titulo +
-                "\nAutor = " + autor +
-                "\nAno de Publicação = " + anoDePublicacao +
-                "\nNúmero de páginas = " + numeroDePaginas;
     }
 }

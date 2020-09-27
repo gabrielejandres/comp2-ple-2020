@@ -79,6 +79,7 @@ public class LojaVirtualTest {
 
         assertEquals("A venda deve ser efetuada, se houver quantidade, e o recibo deve ser retornado",reciboEsperado, loja.efetuarVenda(roupa2, 2));
         assertEquals(170, loja.getTotalValorVendas(), 0);
+        assertEquals(0, loja.getTamanhoEstoque(roupa2));
     }
 
     /**
@@ -100,6 +101,7 @@ public class LojaVirtualTest {
 
         assertEquals("A venda deve ser efetuada, se houver quantidade, e o recibo deve ser retornado",reciboEsperado, loja.efetuarVenda(livro2, 1));
         assertEquals(40, loja.getTotalValorVendas(), 0);
+        assertEquals(0, loja.getTamanhoEstoque(livro2));
     }
 
     /**
@@ -113,12 +115,15 @@ public class LojaVirtualTest {
 
         loja.efetuarVenda(livro2, 1);
         assertEquals(40, loja.getTotalValorVendas(), 0);
+        assertEquals(0, loja.getTamanhoEstoque(livro2));
 
         loja.efetuarVenda(livro1, 2);
         assertEquals(120, loja.getTotalValorVendas(), 0);
+        assertEquals(0, loja.getTamanhoEstoque(livro1));
 
         loja.efetuarVenda(roupa1, 2);
         assertEquals(290, loja.getTotalValorVendas(), 0);
+        assertEquals(13, loja.getTamanhoEstoque(roupa1));
     }
 
 }
