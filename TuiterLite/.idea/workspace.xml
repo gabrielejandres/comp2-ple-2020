@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c1bb443e-4d4a-4468-af7a-447ec9deedf5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../LojaVirtual/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LojaVirtual/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TuiterLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TuiterLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TuiterLiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TuiterLiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,29 +21,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="102">
+              <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1361#1362#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
+                <element signature="e#1795#1796#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TuiterLiteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -47,15 +60,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="158">
+              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
               <folding>
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TuiterLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+            <state relative-caret-position="-63">
+              <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -73,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LAB5.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="51">
+              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -94,12 +111,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Usuario.java" />
         <option value="$PROJECT_DIR$/src/Anexo.java" />
         <option value="$PROJECT_DIR$/src/HashTag.java" />
-        <option value="$PROJECT_DIR$/src/Tuite.java" />
         <option value="$PROJECT_DIR$/src/TuiterLite.java" />
         <option value="$PROJECT_DIR$/src/TuiterLiteTest.java" />
+        <option value="$PROJECT_DIR$/src/Tuite.java" />
+        <option value="$PROJECT_DIR$/src/Usuario.java" />
       </list>
     </option>
   </component>
@@ -148,6 +165,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,32 +179,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TuiterLiteTest.testePerformanceContabilizacaoDasHashtags">
+  <component name="RunManager" selected="JUnit.TuiterLiteTest">
+    <configuration name="TuiterLite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TuiterLite" />
+      <module name="TuiterLite" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TuiterLiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TuiterLite" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TuiterLiteTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TuiterLiteTest.testeAnexo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TuiterLite" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TuiterLiteTest" />
-      <option name="METHOD_NAME" value="testeAnexo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TuiterLiteTest.testeHashtags" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TuiterLite" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TuiterLiteTest" />
-      <option name="METHOD_NAME" value="testeHashtags" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,13 +216,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TuiterLiteTest.testeTuiteDeUsuarioDesconhecido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TuiterLite" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TuiterLiteTest" />
+      <option name="METHOD_NAME" value="testeTuiteDeUsuarioDesconhecido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" />
-        <item itemvalue="JUnit.TuiterLiteTest.testePerformanceTuites" />
         <item itemvalue="JUnit.TuiterLiteTest" />
-        <item itemvalue="JUnit.TuiterLiteTest.testeAnexo" />
-        <item itemvalue="JUnit.TuiterLiteTest.testeHashtags" />
+        <item itemvalue="JUnit.TuiterLiteTest.testePerformanceTuites" />
+        <item itemvalue="JUnit.TuiterLiteTest.testeTuiteDeUsuarioDesconhecido" />
+        <item itemvalue="Application.TuiterLite" />
+        <item itemvalue="JUnit.TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" />
       </list>
     </recent_temporary>
   </component>
@@ -235,35 +250,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TuiterLiteTest_testePerformanceContabilizacaoDasHashtags - 2020.10.02 at 11h 54m 39s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" configurationId="JUnit" />
+    <history-entry file="TuiterLiteTest_testeTuiteDeUsuarioDesconhecido - 2020.10.02 at 14h 42m 35s.xml">
+      <configuration name="TuiterLiteTest.testeTuiteDeUsuarioDesconhecido" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TuiterLiteTest - 2020.10.02 at 11h 56m 22s.xml">
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 14h 42m 40s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 14h 45m 56s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 14h 47m 15s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 14h 47m 25s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 15h 10m 27s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 16h 08m 25s.xml">
+      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TuiterLiteTest - 2020.10.02 at 16h 09m 02s.xml">
       <configuration name="TuiterLiteTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceContabilizacaoDasHashtags - 2020.10.02 at 11h 58m 03s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceContabilizacaoDasHashtags - 2020.10.02 at 11h 59m 04s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest - 2020.10.02 at 12h 00m 26s.xml">
+    <history-entry file="TuiterLiteTest - 2020.10.02 at 16h 09m 46s.xml">
       <configuration name="TuiterLiteTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 12h 01m 24s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 12h 01m 29s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceTuites - 2020.10.02 at 12h 01m 47s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceTuites" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceContabilizacaoDasHashtags - 2020.10.02 at 12h 01m 57s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TuiterLiteTest_testePerformanceContabilizacaoDasHashtags - 2020.10.02 at 12h 02m 09s.xml">
-      <configuration name="TuiterLiteTest.testePerformanceContabilizacaoDasHashtags" configurationId="JUnit" />
+    <history-entry file="TuiterLiteTest - 2020.10.02 at 16h 10m 07s.xml">
+      <configuration name="TuiterLiteTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -345,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HashTag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -359,48 +367,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Usuario.java">
+    <entry file="file://$PROJECT_DIR$/LAB5.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TuiterLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TuiterLiteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="172" column="34" selection-start-line="172" selection-start-column="34" selection-end-line="172" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TuiterLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+          <folding>
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+          <folding>
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

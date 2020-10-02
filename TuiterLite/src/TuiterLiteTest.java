@@ -170,7 +170,7 @@ public class TuiterLiteTest {
     @Test
     public void testePerformanceContabilizacaoDasHashtags() {
 
-        for (int i = 1; i <= 20000; i++) {
+        for (int i = 1; i <= 2000; i++) {
             String hashtag = String.format("#%d", i);
             tuiterLite.tuitarAlgo(usuario, hashtag);
         }
@@ -191,7 +191,7 @@ public class TuiterLiteTest {
         }
 
         // agora vamos tentar fazer um número grande de tuítes com usuário desconhecido
-        Usuario usuarioNaoCadastrado = new Usuario("Usuário Desconhedido", "unknown@void.com");
+        Usuario usuarioNaoCadastrado = new Usuario("Usuário Desconhecido", "unknown@void.com");
         for (int i = 1; i <= 300_000; i++) {
             assertNull(tuiterLite.tuitarAlgo(usuarioNaoCadastrado, "Teste"));
         }

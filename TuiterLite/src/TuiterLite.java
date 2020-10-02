@@ -22,6 +22,9 @@ public class TuiterLite<T> {
     // qtd de cada uma das hashTags
     private ArrayList<Integer> qtdHashTags = new ArrayList<>();
 
+    // tuites do sistema
+    private ArrayList<Tuite> tuites = new ArrayList<>();
+
     /**
      * Cadastra um usuário, retornando o novo objeto Usuario criado.
      * Se o email informado já estiver em uso, não faz nada e retorna null.
@@ -31,10 +34,8 @@ public class TuiterLite<T> {
      */
     public Usuario cadastrarUsuario(String nome, String email) {
 
-        for(Usuario usuario : usuarios) {
-            if(usuario.getEmail().equals(email)) {
-                return null;
-            }
+        if(verificaUsuarioCadastrado(email)) {
+            return null;
         }
 
         Usuario novoUsuario = new Usuario(nome, email);
@@ -55,44 +56,20 @@ public class TuiterLite<T> {
         boolean autorDesconhecido = usuario.getNome().equals("Usuário Desconhecido") || usuario.getEmail().equals("unknown@void.com");
         boolean tamanhoMaximoExcedido = texto.length() > TuiterLite.TAMANHO_MAXIMO_TUITES;
 
-        if(autorDesconhecido || tamanhoMaximoExcedido || !usuarios.contains(usuario)) {
+        if(autorDesconhecido || tamanhoMaximoExcedido) {
             return null;
         }
 
         atualizaUsuario(usuario);
 
+        // cria o tuite e o adiciona ao sistema
         Tuite tuite = new Tuite<>(usuario, texto);
+        tuites.add(tuite);
 
+        // adiciona as hashtags utilizadas ao sistema
         adicionarHashTag(tuite.getHashtags());
+
         return tuite;
-    }
-
-    private void atualizaUsuario(Usuario usuario) {
-        int qtdTuitesUsuario = usuario.getQtdTuites();
-
-        // incrementa porque o usuário fez um novo tuite
-        qtdTuitesUsuario++;
-        usuario.setQtdTuites(qtdTuitesUsuario);
-
-        // verificação e promoção do usuário, se for o caso
-        verificaPromocaoUsuarioASenior(usuario, qtdTuitesUsuario);
-        verificaPromocaoUsuarioANinja(usuario, qtdTuitesUsuario);
-    }
-
-    private void verificaPromocaoUsuarioASenior(Usuario usuario, int qtdTuitesUsuario) {
-        boolean promoverUsuarioASenior = qtdTuitesUsuario >= Usuario.MIN_TUITES_SENIOR;
-
-        if(promoverUsuarioASenior) {
-            usuario.setNivel(NivelUsuario.SENIOR);
-        }
-    }
-
-    private void verificaPromocaoUsuarioANinja(Usuario usuario, int qtdTuitesUsuario) {
-        boolean promoverUsuarioANinja = qtdTuitesUsuario >= Usuario.MIN_TUITES_NINJA;
-
-        if(promoverUsuarioANinja) {
-            usuario.setNivel(NivelUsuario.NINJA);
-        }
     }
 
     /**
@@ -116,6 +93,52 @@ public class TuiterLite<T> {
         return maisComum;
     }
 
+    /**
+     * Incrementa a quantidade de tuites do usuário e o promove, se for o caso
+     * @param usuario o usuário a ser atualizado
+     */
+    private void atualizaUsuario(Usuario usuario) {
+        int qtdTuitesUsuario = usuario.getQtdTuites();
+
+        // incrementa porque o usuário fez um novo tuite
+        qtdTuitesUsuario++;
+        usuario.setQtdTuites(qtdTuitesUsuario);
+
+        // verificação e promoção do usuário, se for o caso
+        verificaPromocaoUsuarioASenior(usuario, qtdTuitesUsuario);
+        verificaPromocaoUsuarioANinja(usuario, qtdTuitesUsuario);
+    }
+
+    /**
+     * Verifica se o usuário chegou no mínimo de tuites para ser promovido a senior e o promove, se for o caso
+     * @param usuario o usuário em questão
+     * @param qtdTuitesUsuario a quantidade de tuites desse usuário
+     */
+    private void verificaPromocaoUsuarioASenior(Usuario usuario, int qtdTuitesUsuario) {
+        boolean promoverUsuarioASenior = qtdTuitesUsuario >= Usuario.MIN_TUITES_SENIOR;
+
+        if(promoverUsuarioASenior) {
+            usuario.setNivel(NivelUsuario.SENIOR);
+        }
+    }
+
+    /**
+     * Verifica se o usuário chegou no mínimo de tuites para ser promovido a ninja e o promove, se for o caso
+     * @param usuario o usuário em questão
+     * @param qtdTuitesUsuario a quantidade de tuites desse usuário
+     */
+    private void verificaPromocaoUsuarioANinja(Usuario usuario, int qtdTuitesUsuario) {
+        boolean promoverUsuarioANinja = qtdTuitesUsuario >= Usuario.MIN_TUITES_NINJA;
+
+        if(promoverUsuarioANinja) {
+            usuario.setNivel(NivelUsuario.NINJA);
+        }
+    }
+
+    /**
+     * Adiciona novas hashtags ao tuiter
+     * @param hashtags
+     */
     private void adicionarHashTag(ArrayList<String> hashtags) {
         for(String hashtag : hashtags) {
             boolean hashtagNaoCadastrada = !this.hashTags.contains(hashtag);
@@ -130,6 +153,20 @@ public class TuiterLite<T> {
         }
     }
 
+    /**
+     * Verifica se o usuário está cadastrado no tuiter
+     * @param email
+     * @return
+     */
+    private boolean verificaUsuarioCadastrado(String email) {
+        for(Usuario usuario : usuarios) {
+            if(usuario.getEmail().equals(email)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // Mainzinho bobo, apenas ilustrando String.split(regexp), e o String.startsWith()
 
 //    public static void main(String[] args) {
@@ -141,4 +178,5 @@ public class TuiterLite<T> {
 //            }
 //        }
 //    }
+
 }
