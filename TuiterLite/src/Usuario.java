@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Objects;
 
 public class Usuario {
 
@@ -106,5 +107,10 @@ public class Usuario {
         if (o == null || getClass() != o.getClass()) return false;
         Usuario usuario = (Usuario) o;
         return email.equals(usuario.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(email);
     }
 }

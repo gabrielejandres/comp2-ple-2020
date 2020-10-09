@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+import sun.util.resources.cldr.zh.CalendarData_zh_Hans_HK;
+
+import java.util.*;
 
 /**
  *  Esta classe implementa um sistema de mensagens curtas estilo Twitter.
@@ -14,13 +16,10 @@ public class TuiterLite<T> {
     public static final int TAMANHO_MAXIMO_TUITES = 120;
 
     // os usuários cadastrados no tuiter lite
-    private ArrayList<Usuario> usuarios = new ArrayList<>();
+    private Set<Usuario> usuarios = new HashSet<>();
 
-    // hashTags utilizadas
-    private ArrayList<String> hashTags = new ArrayList<>();
-
-    // qtd de cada uma das hashTags
-    private ArrayList<Integer> qtdHashTags = new ArrayList<>();
+    // as hashtags no tuiter lite
+    private Map<String, Integer> qtdByHashtags = new HashMap<>();
 
     // tuites do sistema
     private ArrayList<Tuite> tuites = new ArrayList<>();
@@ -33,10 +32,6 @@ public class TuiterLite<T> {
      * @return O Usuario criado.
      */
     public Usuario cadastrarUsuario(String nome, String email) {
-
-        if(verificaUsuarioCadastrado(email)) {
-            return null;
-        }
 
         Usuario novoUsuario = new Usuario(nome, email);
         this.usuarios.add(novoUsuario);
@@ -78,19 +73,8 @@ public class TuiterLite<T> {
      * @return A hashtag mais comum, ou null se nunca uma hashtag houver sido tuitada.
      */
     public String getHashtagMaisComum() {
-        String maisComum = "";
-        int qtdMaisComum = 0;
-        for(String hashtag : this.hashTags) {
-            int index = this.hashTags.indexOf(hashtag);
-            int qtdHashTag = this.qtdHashTags.get(index);
-
-            if(qtdHashTag > qtdMaisComum) {
-                qtdMaisComum = qtdHashTag;
-                maisComum = hashtag;
-            }
-        }
-
-        return maisComum;
+        // método max de collections recebe uma collection e um comparator, que no nosso caso, é o valor correspondente à chave
+        return Collections.max(qtdByHashtags.entrySet(), Map.Entry.comparingByValue()).getKey();
     }
 
     /**
@@ -140,43 +124,11 @@ public class TuiterLite<T> {
      * @param hashtags
      */
     private void adicionarHashTag(ArrayList<String> hashtags) {
-        for(String hashtag : hashtags) {
-            boolean hashtagNaoCadastrada = !this.hashTags.contains(hashtag);
-            if(hashtagNaoCadastrada) {
-                this.hashTags.add(hashtag);
-                this.qtdHashTags.add(1);
-            } else {
-                int index = this.hashTags.indexOf(hashtag);
-                int qtdAtual = this.qtdHashTags.get(index);
-                this.qtdHashTags.set(index, ++qtdAtual);
-            }
+        for (String hashtag : hashtags) {
+            boolean hashtagCadastrada = qtdByHashtags.get(hashtag) != null;
+            int qtdAtual = hashtagCadastrada ? qtdByHashtags.get(hashtag) : 0;
+            qtdByHashtags.put(hashtag, ++qtdAtual);
         }
     }
-
-    /**
-     * Verifica se o usuário está cadastrado no tuiter
-     * @param email
-     * @return
-     */
-    private boolean verificaUsuarioCadastrado(String email) {
-        for(Usuario usuario : usuarios) {
-            if(usuario.getEmail().equals(email)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    // Mainzinho bobo, apenas ilustrando String.split(regexp), e o String.startsWith()
-
-//    public static void main(String[] args) {
-//        String frase = "Testando algo,sdf com #hashtags no meio #teste vamos ver!fdfgf";
-//        String[] palavras = frase.split("[\\s,!]");
-//        for (String palavra : palavras) {
-//            if (palavra.startsWith("#")) {
-//                System.out.println(palavra);
-//            }
-//        }
-//    }
 
 }

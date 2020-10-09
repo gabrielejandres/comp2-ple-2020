@@ -169,13 +169,17 @@ public class TuiterLiteTest {
     /////
     @Test
     public void testePerformanceContabilizacaoDasHashtags() {
+        long inicio = System.currentTimeMillis();
 
-        for (int i = 1; i <= 2000; i++) {
+        for (int i = 1; i <= 200_000; i++) {
             String hashtag = String.format("#%d", i);
             tuiterLite.tuitarAlgo(usuario, hashtag);
         }
         tuiterLite.tuitarAlgo(usuario, "#5");
         assertEquals("#5", tuiterLite.getHashtagMaisComum());
+
+        System.out.println("duracao = " +
+                (System.currentTimeMillis() - inicio) + " milissegundos");
     }
 
     /////
@@ -183,8 +187,10 @@ public class TuiterLiteTest {
     /////
     @Test
     public void testePerformanceTuites() {
+        long inicio = System.currentTimeMillis();
+
         // vamos cadastrar um número grande de usuários
-        for (int i = 1; i <= 3000; i++) {
+        for (int i = 1; i <= 300_000; i++) {
             String nome = String.format("Usuário %d", i);
             String email = String.format("usuario%d@email.com", i);
             tuiterLite.cadastrarUsuario(nome, email);
@@ -195,5 +201,8 @@ public class TuiterLiteTest {
         for (int i = 1; i <= 300_000; i++) {
             assertNull(tuiterLite.tuitarAlgo(usuarioNaoCadastrado, "Teste"));
         }
+
+        System.out.println("duracao = " +
+                (System.currentTimeMillis() - inicio) + " milissegundos");
     }
 }
