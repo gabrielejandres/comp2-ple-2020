@@ -1,6 +1,9 @@
 import java.util.Collections;
 import java.util.List;
 
+/***
+ * Calcula a interseção entre duas listas por meio de busca binária.
+ */
 public class CalculadorIntersecaoViaBuscaBinaria extends CalculadorIntersecao<Integer> {
 
     @Override
