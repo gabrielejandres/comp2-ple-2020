@@ -56,9 +56,9 @@ public class TuiterLite<T> {
      * @param texto O texto desejado
      * @return Um "tuíte", que será devidamente publicado no sistema
      * @throws UsuarioDesconhecidoException caso o autor do tuite seja um usuário desconhecido
-     * @throws TamanhoMaximoExcedidoException caso o tamanho máximo do tuite seja excedido
+     * @throws TamanhoMaximoDoTuiteExcedidoException caso o tamanho máximo do tuite seja excedido
      */
-    public Tuite tuitarAlgo(Usuario usuario, String texto) throws UsuarioDesconhecidoException, TamanhoMaximoExcedidoException {
+    public Tuite tuitarAlgo(Usuario usuario, String texto) throws UsuarioDesconhecidoException, TamanhoMaximoDoTuiteExcedidoException {
         boolean autorDesconhecido = usuario.getNome().equals("Usuário Desconhecido") || usuario.getEmail().equals("unknown@void.com");
         boolean tamanhoMaximoExcedido = texto.length() > TuiterLite.TAMANHO_MAXIMO_TUITES;
 
@@ -67,7 +67,7 @@ public class TuiterLite<T> {
         }
 
         if(tamanhoMaximoExcedido) {
-            throw new TamanhoMaximoExcedidoException("Um tuite não pode ultrapassar o tamanho de 120 caracteres");
+            throw new TamanhoMaximoDoTuiteExcedidoException("Um tuite não pode ultrapassar o tamanho de 120 caracteres");
         }
 
         atualizaUsuario(usuario);
