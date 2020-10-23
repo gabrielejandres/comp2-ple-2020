@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Utils {
@@ -114,8 +116,10 @@ public class Utils {
 
         @Override
         public String toString() {
+            DecimalFormat df = new DecimalFormat("##.##");
+            df.setRoundingMode(RoundingMode.DOWN);
             return "-------- Resultados da turma: --------" + "\n" +
-                    "Média: " + mediaDaTurma + "\n" +
+                    "Média: " + df.format(mediaDaTurma) + "\n" +
                     "Aprovados: " + quantAlunosAprovados + "\n" +
                     "Reprovados: " + getQuantAlunosReprovados + "\n" +
                     "DRE do aluno com maior média: " + dreDoAlunoComMaiorMedia;
