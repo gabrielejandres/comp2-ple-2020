@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../Intersecao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Intersecao/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Intersecao/out/production/Intersecao/CalculadorIntersecaoEsperto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Intersecao/out/production/Intersecao/CalculadorIntersecaoEsperto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Intersecao/out/production/Intersecao/CalculadorIntersecaoViaBuscaBinaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Intersecao/out/production/Intersecao/CalculadorIntersecaoViaBuscaBinaria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TuiterLite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TuiterLite/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TuiterLite/out/production/TuiterLite/TamanhoMaximoExcedidoException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TuiterLite/out/production/TuiterLite/TuiterLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TuiterLite/out/production/TuiterLite/TuiterLite.class" afterDir="false" />
@@ -26,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state relative-caret-position="158">
+              <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -146,6 +147,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -272,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+        <state relative-caret-position="158">
+          <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
         </state>
       </provider>
     </entry>

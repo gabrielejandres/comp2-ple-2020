@@ -9,18 +9,49 @@ public class Principal {
 
     private static Scanner scanner;
 
-    private static ResultadosTurma calcularMedia(String arquivo) throws ArquivoCorrompidoException, FileNotFoundException {
+    private static class ResultadosTurma {
+        float mediaDaTurma;
+        int quantAlunosAprovados;
+        int getQuantAlunosReprovados;
+        long dreDoAlunoComMaiorMedia;
 
-        int quantNotasInvalidas = 0;
-        int quantNotasValidas = 0;
-        float maiorNota = 0;
-        float somaNotas = 0;
+        @Override
+        public String toString() {
+            return "-------- Resultados da turma: --------" + "\n" +
+                    "Média:" + mediaDaTurma + "\n" +
+                    "Aprovados: " + quantAlunosAprovados + "\n" +
+                    "Reprovados: " + getQuantAlunosReprovados + "\n" +
+                    "DRE do aluno com maior média: " + dreDoAlunoComMaiorMedia;
+        }
+    }
 
+    private static Scanner abrirArquivo(String arquivo) throws FileNotFoundException {
         File arq = new File(arquivo);
-        ResultadosTurma resultados = new ResultadosTurma();
 
         // se o arquivo não puder ser aberto, uma FileNotFoundException será lançada
         scanner = new Scanner(arq);
+
+        return scanner;
+    }
+
+    private static ResultadosTurma calcularMedia(String arquivo) throws ArquivoCorrompidoException, FileNotFoundException {
+
+        // quantidade de notas inválidas lidas do arquivo
+        int quantNotasInvalidas = 0;
+
+        // quantidade de notas válidas lidas do arquivo
+        int quantNotasValidas = 0;
+
+        // maior nota lida do arquivo
+        float maiorNota = 0;
+
+        // soma de todas as notas válidas do arquivo
+        float somaNotas = 0;
+
+        // resultados da turma
+        ResultadosTurma resultados = new ResultadosTurma();
+
+        scanner = abrirArquivo(arquivo);
 
         // essa parte do código só vai acontecer se o scanner conseguir abrir o arquivo
         while (scanner.hasNext()) {
@@ -74,7 +105,7 @@ public class Principal {
 
             try {
                 ResultadosTurma resultados = calcularMedia(nomeArquivo);
-                imprimirResultados(resultados);
+                System.out.println(resultados.toString());
             } catch (ArquivoCorrompidoException e) {
                 System.out.println(e.getMessage());
                 System.out.println("Esse arquivo tem " + e.getQuantLinhasInvalidas() + " linhas inválidas.");
@@ -85,20 +116,5 @@ public class Principal {
             }
         } while(fileNotFound);
 
-    }
-
-    private static class ResultadosTurma {
-        float mediaDaTurma;
-        int quantAlunosAprovados;
-        int getQuantAlunosReprovados;
-        long dreDoAlunoComMaiorMedia;
-    }
-
-    private static void imprimirResultados(ResultadosTurma resultados) {
-        System.out.println("-------- Resultados da turma: --------");
-        System.out.println("Média: " + resultados.mediaDaTurma);
-        System.out.println("Aprovados: " + resultados.quantAlunosAprovados);
-        System.out.println("Reprovados: " + resultados.getQuantAlunosReprovados);
-        System.out.println("DRE do aluno com maior média: " + resultados.dreDoAlunoComMaiorMedia);
     }
 }
