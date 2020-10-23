@@ -30,6 +30,32 @@ public class Utils {
         }
     }
 
+    /**
+     * Verifica se o arquivo está corrompido de acordo com a regra de negócio estabelecida
+     * @param resultados um objeto que contém informações dos resultados de uma turma
+     * @param quantNotasValidas quantidade de notas válidas
+     * @param quantNotasInvalidas quantidade de notas inválidas
+     * @param somaNotas soma de todas as notas da turma
+     * @throws ArquivoCorrompidoException  se a quantidade de notas válidas for menor ou igual a de inválidas
+     */
+    private static void verificaArquivoCorrompido(ResultadosTurma resultados, int quantNotasValidas, int quantNotasInvalidas, float somaNotas) throws ArquivoCorrompidoException {
+        boolean isCorrompido = quantNotasValidas <= quantNotasInvalidas;
+
+        if (isCorrompido) {
+            throw new ArquivoCorrompidoException("O arquivo está corrompido. " +
+                    "A quantidade de notas inválidas é maior do que a quantidade de notas válidas.", quantNotasInvalidas);
+        } else {
+            resultados.mediaDaTurma = somaNotas / quantNotasValidas;
+        }
+    }
+
+    /**
+     * Calcula a média de uma turma com base nas notas lidas de um arquivo
+     * @param arquivo o nome do arquivo
+     * @return um objeto com os resultados da turma
+     * @throws ArquivoCorrompidoException se a quantidade de notas válidas for menor ou igual a de inválidas
+     * @throws FileNotFoundException se o arquivo não for encontrado
+     */
     public static ResultadosTurma calcularMedia(String arquivo) throws ArquivoCorrompidoException, FileNotFoundException {
 
         // quantidade de notas inválidas lidas do arquivo
@@ -49,7 +75,6 @@ public class Utils {
 
         Scanner scanner = abrirArquivo(arquivo);
 
-        // essa parte do código só vai acontecer se o scanner conseguir abrir o arquivo
         while (scanner.hasNext()) {
             try {
                 String linha = scanner.nextLine();
@@ -73,13 +98,7 @@ public class Utils {
             }
         }
 
-        boolean arquivoCorrompido = quantNotasValidas <= quantNotasInvalidas;
-        if (arquivoCorrompido) {
-            throw new ArquivoCorrompidoException("O arquivo está corrompido. " +
-                    "A quantidade de notas inválidas é maior do que a quantidade de notas válidas.", quantNotasInvalidas);
-        } else {
-            resultados.mediaDaTurma = somaNotas / quantNotasValidas;
-        }
+        verificaArquivoCorrompido(resultados, quantNotasValidas, quantNotasInvalidas, somaNotas);
 
         return resultados;
     }
